@@ -29,4 +29,5 @@ urlpatterns = [
     
     # App API Endpoints
     path('api/fleet/', include('fleet.urls')),
+    path('api/routes/', include('routes.urls')),
 ]
