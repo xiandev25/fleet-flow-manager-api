@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'users',
     'clients',
     'fleet',
+    'routes',
 ]
 
 MIDDLEWARE = [
