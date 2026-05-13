@@ -22,6 +22,9 @@ class Family(models.Model):
     def __str__(self):
         return f"Family of {self.primary_guardian.get_full_name() or self.primary_guardian.username}"
 
+    class Meta:
+        verbose_name_plural = "Families"
+
 
 class Student(models.Model):
     first_name = models.CharField(max_length=100)
