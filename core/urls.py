@@ -34,3 +34,7 @@ urlpatterns = [
     path('api/operations/', include('operations.urls')),
     path('api/billing/', include('billing.urls')),
 ]
+
+# Global API Error Handlers
+handler404 = 'core.views.custom_handler404'
+handler500 = 'core.views.custom_handler500'
